@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  .btn-cart {
+    margin: 50px 50px 20px 500px;
+  }
+  .products {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .product-item {
+    p {
+      font-size: 20px;
+      color: red;
+      margin: 10px 0;
+    }
+  }
+  .rub {
+    font-family: arial;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    line-height: 6px;
+		margin-right: 5px;
+    display: inline-block;
+    width: 0.4em;
+  }
+}
