@@ -28,3 +28,4 @@ const renderProducts = (list) => {
 };
 
 renderProducts(products);
+
