@@ -29,6 +29,7 @@ class ProductList {
       );
     }
   }
+  // 2 practice
   _totalAmount(sum = 0) {
     for (const product of this._goods) {
       sum += product.price;
@@ -58,6 +59,7 @@ class ProductItem {
   }
 }
 
+// 1 practice
 class BasketList {
   constructor(container = ".basket") {
     this.container = document.querySelector(container);
@@ -127,3 +129,60 @@ const list = new ProductList();
 // };
 //
 // renderProducts(products);
+
+// 3 practice
+const sizeSmall = { title: "SMALL", price: 50, calories: 20 };
+const sizeBig = { title: "BIG", price: 100, calories: 40 };
+const stufCheese = { title: "CHEESE", price: 10, calories: 20 };
+const stufSalad = { title: "SALAD", price: 20, calories: 5 };
+const stufPotato = { title: "POTATO", price: 15, calories: 10 };
+const topSpice = { title: "SPICE", price: 15, calories: 0 };
+const topSauce = { title: "SAUCE", price: 20, calories: 10 };
+
+class Hamburger {
+  constructor(size, stuffing) {
+    this.size = size;
+    this.stuffing = stuffing;
+  }
+
+  addTopping(topping) {
+    if (!this.topping) {
+      this.topping = topping;
+    }
+    return;
+  } // Добавить добавку
+  removeTopping(topping) {
+    if (!this.topping) {
+      return;
+    }
+    delete this.topping;
+  } // Убрать добавку
+  getToppings(topping) {} // Получить список добавок
+  getSize() {
+    return this.size.title;
+  } // Узнать размер гамбургера
+  getStuffing() {
+    return this.stuffing.title;
+  } // Узнать начинку гамбургера
+  calculatePrice() {
+    return !this.topping
+      ? this.size.price + this.stuffing.price
+      : this.size.price + this.stuffing.price + this.topping.price;
+  } // Узнать цену
+  calculateCalories() {
+    return !this.topping
+      ? this.size.calories + this.stuffing.calories
+      : this.size.calories + this.stuffing.calories + this.topping.calories;
+  } // Узнать калорийность
+}
+const ham1 = new Hamburger(sizeBig, stufSalad);
+ham1.addTopping(topSauce);
+//ham1.addTopping(topSpice);
+console.log(ham1.topping.title);
+ham1.removeTopping(topSauce);
+console.log(ham1);
+
+console.log(ham1.getSize());
+console.log(ham1.getStuffing());
+console.log(ham1.calculatePrice());
+console.log(ham1.calculateCalories());
