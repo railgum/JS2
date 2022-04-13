@@ -132,7 +132,7 @@ const list = new ProductList();
 */
 
 
-
+// 3 practice
 
 const sizeSmall = { title: "SMALL", price: 50, calories: 20 };
 const sizeBig = { title: "BIG", price: 100, calories: 40 };
