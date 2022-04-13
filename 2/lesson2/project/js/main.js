@@ -107,7 +107,7 @@ class BasketItem {
 }
 
 const list = new ProductList();
-
+/*
 // const products = [
 //   {id: 1, title: 'Notebook', price: 20000},
 //   {id: 2, title: 'Mouse', price: 1500},
@@ -129,8 +129,11 @@ const list = new ProductList();
 // };
 //
 // renderProducts(products);
+*/
 
-// 3 practice
+
+
+
 const sizeSmall = { title: "SMALL", price: 50, calories: 20 };
 const sizeBig = { title: "BIG", price: 100, calories: 40 };
 const stufCheese = { title: "CHEESE", price: 10, calories: 20 };
