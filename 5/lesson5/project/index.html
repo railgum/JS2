@@ -17,10 +17,14 @@
               <i class="fas fa-search"></i>
             </button>
           </form>
-          <button class="btn-cart" type="button" @click="isVisibleCart($event)">
+          <button
+            class="btn-cart"
+            type="button"
+            @click="isVisibleCart=!isVisibleCart"
+          >
             Корзина
           </button>
-          <div class="cart invisible">
+          <div class="cart" :class="{invisible: isVisibleCart}">
             <div class="cart-block" v-if="goodsList.length">
               <div
                 class="cart-item"
@@ -55,7 +59,7 @@
         <div class="products">
           <div
             class="product-item"
-            v-for="product of products"
+            v-for="product of filtered"
             :key="product.id_product"
             :data-id="product.id_product"
           >

@@ -10,6 +10,8 @@ const app = new Vue({
     cartImgCatalog: "https://via.placeholder.com/100x50",
     searchLine: "",
     goodsList: [],
+    filtered: [],
+    isVisibleCart: true,
   },
   methods: {
     getJson(url) {
@@ -23,27 +25,27 @@ const app = new Vue({
       console.log(product.id_product);
     },
     filterGoods() {
-      console.log(this.searchLine);
+      //console.log(this.searchLine);
       const regexp = new RegExp(this.searchLine, "i");
       this.filtered = this.products.filter((product) =>
         regexp.test(product.product_name)
       );
-      this.products.forEach((el) => {
-        const block = document.querySelector(
-          `.product-item[data-id="${el.id_product}"]`
-        );
-        console.log(block);
-        if (!this.filtered.includes(el)) {
-          block.classList.add("invisible");
-        } else {
-          block.classList.remove("invisible");
-        }
-      });
+      //this.products.forEach((el) => {
+      //  const block = document.querySelector(
+      //    `.product-item[data-id="${el.id_product}"]`
+      //  );
+      //  console.log(block);
+      //  if (!this.filtered.includes(el)) {
+      //    block.classList.add("invisible");
+      //  } else {
+      //    block.classList.remove("invisible");
+      //  }
+      //});
     },
-    isVisibleCart(event) {
-      console.log(this.goodsList);
-      event.target.nextElementSibling.classList.toggle("invisible");
-    },
+    //isVisibleCart(event) {
+    //  console.log(this.goodsList);
+    //  event.target.nextElementSibling.classList.toggle("invisible");
+    //},
   },
   beforeCreate() {
     console.log("beforeCreate");
