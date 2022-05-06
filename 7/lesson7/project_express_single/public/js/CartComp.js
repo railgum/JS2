@@ -65,7 +65,7 @@ Vue.component("cart", {
                 :key="item.id_product"
                 :cart-item="item" 
                 :img="imgCart"
-                
+                @editItem="edit"
 								@deleteProduct="deleteProduct">
                 </cart-item>
             </div>
@@ -79,8 +79,11 @@ Vue.component("cart-item", {
       quantity: 0,
     };
   },
-  methods: {},
-
+  methods: {
+    editItem() {
+      this.$emit("edit", this.quantity);
+    },
+  },
   template: `
                 <div class="cart-item">
                 <div class="product-bio">
@@ -88,7 +91,9 @@ Vue.component("cart-item", {
                     <div class="product-desc">
                         <p class="product-title">{{cartItem.product_name}}</p>
                         <p class="product-quantity">Количество: 
-													<input v-model="quantity" type="number" class="quantity-range" min="1" step="1">
+													<custom-input v-model.number="quantity" 
+													 type="number" class="quantity-range" min="1" step="1">
+													</custom-input>
 												</p>
                         <p class="product-single-price">{{cartItem.price}}₽ за единицу</p>
                     </div>
@@ -99,4 +104,14 @@ Vue.component("cart-item", {
                 </div>
             </div>
     `,
+});
+
+Vue.component("custom-input", {
+  props: ["value"],
+  template: `
+    <input
+      v-bind:value="value"
+      v-on:input="$emit('input', $event.target.value)"
+    >
+  `,
 });
