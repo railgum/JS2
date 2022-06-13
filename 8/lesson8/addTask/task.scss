@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/*-----Подключения-------*/
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&family=Playfair+Display:regular,700,700italic&display=swap");
+@import "_general";
+@import "_b-header";
+@import "_b-publicity";
+@import "_b-collection";
+@import "_b-form";
+@import "_b-footer";
+
+/*------блоки-------*/
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+.b-wrapper {
+  max-width: 1920px;
+}
+
+.b_container {
+  width: 1110px;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    width: auto;
+  }
+}
+
+.b-header {
+  height: 900px;
+  //max-width: 100%;
+  background: linear-gradient(180deg, #282828 0%, rgba(40, 40, 40, 0) 100%), url(../addTask/image/headerBGR.jpg), #EDEDED;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}
+
+.b-main__publicity {
+  height: 856px;
+  background: $mainBGR;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.b-main__collection {
+  height: 1038px;
+  background: $collectionBGR;
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}
+
+.b-main__form {
+  height: 767px;
+  background: $mainBGR;
+  padding-top: 104px;
+  @media (max-width: 768px) {
+    height: auto;
+    padding-top: 60px;
+  }
+}
+
+.b-footer {
+  height: 220px;
+  background: $footerBGR;
+  @media (max-width: 768px) {
+    height: auto;
+  }
+}

@@ -1,0 +1,270 @@
+@keyframes myAnim {
+    0% {
+        left: 39.5%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.cart__new-wrap {
+    @include respond-to(tablet) {
+        justify-content: center !important;
+        margin: 0;
+    }
+}
+
+.cart {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    @include respond-to (tabletLS) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__left {
+        margin-top: 96px;
+        @include respond-to (tabletLS) {
+            margin-top: 59px;
+        }
+        @include respond-to (tablet) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 39px;
+        }
+    }
+    &__left-wrap {
+        background: #fff;
+        width: 652px;
+        height: 306px;
+        position: relative;
+        display: flex;
+        justify-content: start;
+        margin-bottom: 40px;
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        @include respond-to (tabletLS) {
+            width: 734px;
+        }
+        @include respond-to(tablet) {
+            max-width: 358px;
+            height: 188px;
+            margin-bottom: 32px;
+            filter: drop-shadow(8px 8px 21px rgba(0, 0, 0, 0.13));
+        }
+    }
+    &__exit {
+        position: absolute;
+        top: 28px;
+        right: 22px;
+    }
+    &__left-img {
+        position: relative;
+        left: 39.5%;
+        animation-name: myAnim;
+        animation-duration: 3s;
+        animation-delay: 3s;
+        animation-fill-mode: forwards;
+        img {
+            width: 262px;
+            height: 306px;
+            @include respond-to (tablet) {
+                width: 144px;
+                height: 188px;
+            }
+        }
+    }
+    &__left-label {
+        width: 210px;
+        height: 222px;
+        margin-top: 22px;
+        margin-left: 31px;
+        @include respond-to (tablet) {
+            height: 188px;
+            width: 140px;
+            margin-top: 13px;
+            margin-left: 17px;
+        }
+    }
+    &__left-title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #222222;
+        @include respond-to (tablet) {
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    &__left-text {
+        margin-top: 42px;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #575757;
+        @include respond-to (tablet) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-top: 25px;
+        }
+        li {
+            margin-bottom: 6px;
+        }
+    }
+    &__left-price {
+        color: #EF5B70;
+    }
+    &__left-quantity {
+        display: inline-block;
+        text-align: center;
+        width: 43px;
+        height: 24px;
+        margin-left: 24px;
+        border: 1px solid #EAEAEA;
+    }
+    &__left-btn {
+        display: flex;
+        justify-content: space-between;
+        margin: 32px 0 128px;
+        @include respond-to (tabletLS) {
+            justify-content: center;
+            margin: 22px 0 64px;
+        }
+        @include respond-to(tablet) {
+            margin: -2px 0 48px;
+        }
+        .clear__btn,
+        .continue__btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 234px;
+            height: 49px;
+            border: 1px solid #A4A4A4;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #575757;
+            @include respond-to (tabletLS) {
+                width: 225px;
+                margin-right: 24px;
+                margin-left: 24px;
+            }
+            @include respond-to (tablet) {
+                width: 175px;
+                height: 33px;
+                font-size: 12px;
+                line-height: 14px;
+                margin-right: 5px;
+                margin-left: 5px;
+            }
+        }
+    }
+    &__right {
+        @include respond-to (tabletLS) {
+            display: flex;
+            justify-content: space-between;
+            width: 734px;
+            margin-bottom: 128px;
+        }
+        @include respond-to (tablet) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 96px;
+        }
+    }
+    &__right-form {
+        width: 360px;
+        height: 272px;
+        margin-top: 113px;
+        @include respond-to (tabletLS) {
+            margin-top: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            input {
+                width: 359px;
+                height: 44px;
+                border: 1px solid #A4A4A4;
+                margin-bottom: 20px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #222222;
+                padding-left: 17px;
+            }
+            button {
+                width: 101px;
+                height: 35px;
+                background: #fff;
+                border: 1px solid #A4A4A4;
+                @include respond-to(tablet) {
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #575757;
+                }
+            }
+        }
+    }
+    &__right-title {
+        margin-bottom: 20px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+    &__right-bascket {
+        width: 360px;
+        height: 214px;
+        margin-top: 57px;
+        background: #F5F3F3;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        @include respond-to (tabletLS) {
+            margin-top: 39px;
+        }
+        @include respond-to(tablet) {
+            margin-top: 48px;
+        }
+        button {
+            width: 273px;
+            height: 50px;
+            margin-top: 17px;
+            background: #F16D7F;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FFFFFF;
+            align-self: center;
+        }
+    }
+    &__right-subtotal {
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        color: #4A4A4A;
+        margin-top: 39px;
+        margin-right: 34px;
+    }
+    &__right-grandtotal {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+        margin-top: 12px;
+        margin-right: 37px;
+    }
+    .bascket-snape {
+        width: 275px;
+        height: 1px;
+        outline: 1px solid #E2E2E2;
+        margin-top: 21px;
+        align-self: center;
+    }
+}

@@ -1,0 +1,125 @@
+.reg__new-wrap {
+    justify-content: center!important;
+}
+
+.b-reg {
+    min-height: 675px;
+    display: flex;
+    justify-content: start;
+    @include respond-to (tablet) {
+        justify-content: center;
+    }
+    @include respond-to(arm) {
+        flex-direction: column!important;
+    }
+    &__aboutUser {
+        margin-top: 64px;
+        @include respond-to (tablet) {
+            width: 48%;
+        }
+        @include respond-to(arm) {
+            width: 100%;
+            margin-top: 40px;
+        }
+        &-text {
+            margin: 15px auto 39px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+        &-btn {
+            width: 167px;
+            height: 50px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &-btn::after {
+            content: "" url(#{$img}btnArrow.svg);
+            padding-left: 20px;
+        }
+    }
+    &__name {
+        &-title {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+            background: #fff;
+            border: hidden;
+        }
+        &-first,
+        &-last {
+            flex-wrap: nowrap;
+            width: 100%!important;
+            height: 45px;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+        &-first {
+            margin: 20px auto;
+        }
+    }
+    &__radio {
+        margin-top: 31px;
+        margin-bottom: 33px;
+        font-weight: 300;
+        font-size: 11px;
+        line-height: 13px;
+        color: #000000;
+        @include respond-to(tablet) {
+            display: inline-block;
+        }
+    }
+    &__login-title {
+        margin-bottom: 20px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #222222;
+    }
+    &__login-placeholder {
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+    &__loyalty {
+        margin-left: 116px;
+        margin-top: 64px;
+        font-size: 24px;
+        line-height: 29px;
+        @include respond-to (tablet) {
+            width: 48%;
+            margin-left: 10px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        @include respond-to(arm) {
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 96px;
+        }
+        &-title {
+            margin-bottom: 22px;
+        }
+        &-text {
+            width: 652px;
+            @include respond-to (tabletLS) {
+                width: 354px;
+            }
+            @include respond-to(armLS) {
+                width: 100%;
+            }
+        }
+        &-marker {
+            margin-top: 21px;
+            li {
+                margin-bottom: 16px;
+                list-style-image: url(#{$img}regMarker.svg);
+            }
+        }
+    }
+}

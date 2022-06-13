@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <button class="header__logo-search">
+									<img src="img/search.svg" alt="">
+								</button>
+                <div class="menu">
+                    <nav>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link"><img src="#" alt="img"></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link"><img src="#" alt="img"></a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link"><img src="#" alt="img"></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="brand">
+            <div class="brand__img"></div>
+            <div class="brand__text _container">
+                <h1 class="brand__title">THE BRAND</h1>
+                <p class="brand__subtitle">OF LUXERIOUS FASHION</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content__container _container">
+                <div class="type">
+                    <div class="type__item">
+                        <p class="type__item-subtitle">30% OFF</p>
+                        <p class="type__item-title">FOR WOMEN</p>
+                        <img src="" alt="photo"></div>
+                    <div class="type__item">
+                        <p class="type__item-subtitle">HOT DEAL</p>
+                        <p class="type__item-title">FOR MEN</p>
+                        <img src="" alt="photo"></div>
+                    <div class="type__item">
+                        <p class="type__item-subtitle">NEW ARRIVALS</p>
+                        <p class="type__item-title">FOR KIDS</p>
+                        <img src="" alt="photo"></div>
+                    <div class="type__item">
+                        <p class="type__item-subtitle">LUXIROUS & TRENDY</p>
+                        <p class="type__item-title">ACCESORIES</p>
+                        <img src="" alt="photo"></div>
+                </div>
+                <div class="fetured">
+                    <h3 class="fetured__title title">Fetured Items</h3>
+                    <p class="fetured__subtitle subtitle">Shop for items based on what we featured in this week</p>
+                    <div class="fetured__item">
+                        <img class="fetured__item-img" src="" alt="">
+                        <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
+                        <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                    <div class="fetured__item">
+                        <img class="fetured__item-img" src="" alt="">
+                        <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
+                        <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                    <div class="fetured__item">
+                        <img class="fetured__item-img" src="" alt="">
+                        <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
+                        <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                    <div class="fetured__item">
+                        <img class="fetured__item-img" src="" alt="">
+                        <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
+                        <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                    <div class="fetured__item">
+                        <img class="fetured__item-img" src="" alt="">
+                        <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
+                        <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                    <div class="fetured__item">
+                        <img class="fetured__item-img" src="" alt="">
+                        <h4 class="fetured__item-title">ELLERY X M'O CAPSULE</h4>
+                        <p class="fetured__item-subtitle">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                        <p class="fetured__item-price">$52.00</p>
+                    </div>
+                </div>
+                <div class="content__btn">Browse All Product</div>
+            </div>
+
+        </div>
+
+        <div class="feature">
+            <div class="feature__container _container">
+                <div class="free">
+                    <img src="" alt="" class="free__img">
+                    <p class="feature__title">Free Delivery</p>
+                    <p class="feature__subtitle">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="free">
+                    <img src="" alt="" class="free__img">
+                    <p class="feature__title">Sales & discounts</p>
+                    <p class="feature__subtitle">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="free">
+                    <img src="" alt="" class="free__img">
+                    <p class="feature__title">Quality assurance</p>
+                    <p class="feature__subtitle">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <div class="subscribe__container _container">
+                <div class="subscribe__manager">
+                    <img src="" alt="">
+                </div>
+                <div class="subscribe__form">
+                    <h3 class="subscribe__form title">SUBSCRIBE</h3>
+                    <p class="subscribe__form subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <div class="subscribe__form-btn">
+                        <form action="#">
+                            <input type="text" placeholder="Enter Your Email">
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__down">
+                    <div class="container">
+                        <div class="rights">© 2021 Brand All Rights Reserved.</div>
+                        <div class="social__icons">
+                            <div class="facebook">
+                                <img src="" alt="">
+                            </div>
+                            <div class="instagram">
+                                <img src="" alt="">
+                            </div>
+                            <div class="pinterest">
+                                <img src="" alt="">
+                            </div>
+                            <div class="twitter">
+                                <img src="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+
+</html>

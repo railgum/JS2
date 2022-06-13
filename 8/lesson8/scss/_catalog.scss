@@ -1,0 +1,234 @@
+.new {
+    background: #F8F3F4;
+    .new__inside {
+        min-height: 148px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        @include respond-to(armLS) {
+            flex-direction: column;
+            justify-content: start;
+        }
+    }
+    .new__inside-left {
+        font-size: 24px;
+        line-height: 29px;
+        color: #F16D7F;
+        @include respond-to(armLS) {
+            margin: 24px auto 32px;
+        }
+    }
+    .new__inside-right {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;
+        .new__breadcrumb {
+            list-style: none;
+            li {
+                display: inline;
+            }
+            li+li:before {
+                padding: 3px;
+                color: #636363;
+                content: "/\00a0";
+            }
+            li a {
+                text-decoration: none;
+                color: #636363;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
+            li:last-child {
+                color: #F16D7F;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.fetured__item-box:last-child:nth-child(odd) {
+    @include respond-to(tabletLS) {
+        display: none;
+    }
+    @include respond-to (armLS) {
+        display: block;
+    }
+}
+
+.fetured {
+    @include respond-to(tablet) {
+        margin-bottom: 65px !important;
+    }
+}
+
+.filter {
+    margin: 51px auto 64px;
+    display: flex;
+    @include respond-to(tabletLS) {
+        justify-content: space-between;
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    @include respond-to(tablet) {
+        margin: 24px auto 40px;
+        margin-left: 0;
+        margin-right: 16px;
+    }
+    &__left {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        cursor: pointer;
+    }
+    &__left:hover,
+    &__icon:hover {
+        color: #EF5B70 !important;
+    }
+    &__title {
+        @extend %subtitle;
+        margin-left: 16px;
+        color: #000000;
+        position: relative;
+        z-index: 10;
+        @include respond-to(arm) {
+            display: none;
+        }
+    }
+    &__title-red {
+        color: #F16D7F;
+        left: 10px;
+        top: 10px;
+    }
+    &__icon {
+        width: 15px;
+        height: 15px;
+        position: relative;
+        z-index: 10;
+        left: 5px;
+        top: 2px;
+        @include respond-to(arm) {
+            width: 37px;
+            height: 25px;
+        }
+    }
+    &__icon-red {
+        left: 13px;
+        top: 11px;
+    }
+    &__category {
+        position: absolute;
+        width: 360px;
+        min-height: 530px;
+        padding: 24px 33px;
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.2);
+        a {
+            padding-left: 22px;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
+    }
+    &__category-item {
+        margin: 24px 0;
+        a {
+            display: flex;
+            margin-bottom: 11px;
+        }
+    }
+    &__category-title {
+        height: 37px;
+        border-left: 5px solid #F16D7F;
+        padding-left: 11px;
+        border-bottom: 1px solid #ebebeb;
+        margin-bottom: 24px;
+        padding-top: 10px;
+    }
+    &__right {
+        margin-left: 304px;
+        display: flex;
+        z-index: 10;
+        @extend %subtitle;
+        color: #6F6E6E;
+        cursor: pointer;
+        img {
+            position: relative;
+            bottom: 3px;
+            left: 4px;
+        }
+        @include respond-to(tablet) {
+            margin-left: 0;
+            margin-right: 16px;
+        }
+        @include respond-to(armLS) {
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+    &__trending {
+        position: relative;
+    }
+    &__size {
+        margin: 0 27px;
+        position: relative;
+    }
+    &__price {
+        position: relative;
+    }
+    .item__style {
+        position: absolute;
+        left: 0;
+        top: 25px;
+        width: 120px;
+        height: 105px;
+        background: #ffffff;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.2);
+        padding: 7px 9px;
+        box-sizing: border-box;
+        font-size: 14px;
+        color: #6f6e6e;
+        z-index: 10;
+    }
+    div {
+        margin-top: 5px;
+        @include respond-to(armLS) {
+            margin-top: 0;
+        }
+    }
+}
+
+.numbering {
+    margin: 48px auto 96px;
+    width: 284px;
+    height: 44px;
+    border: 1px solid #EBEBEB;
+    padding: 12px 17px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+    @include respond-to(tablet) {
+        margin: 40px auto 63px;
+    }
+    a {
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #c4c4c4;
+    }
+    a:hover {
+        color: #EF5B70;
+    }
+    .fa {
+        color: #000000;
+    }
+}
+
+.subscribe__ .subscribe__form {
+    max-height: 137px;
+}

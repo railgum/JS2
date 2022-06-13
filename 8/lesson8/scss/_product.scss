@@ -1,0 +1,177 @@
+.slide {
+    background: #F7F7F7;
+    height: 777px;
+    position: relative;
+    @include respond-to(tabletLS) {
+        height: 624px;
+    }
+    &__button-left {
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        left: 0;
+        top: 365px;
+        z-index: 1;
+        background: url(#{$img}Slide/slide-left.svg) center no-repeat rgba(42, 42, 42, 0.15);
+        @include respond-to (tabletLS) {
+            top: 288px;
+        }
+    }
+    &__button-left:hover {
+        background: url(#{$img}Slide/slide-left-hover.svg) center no-repeat rgba(42, 42, 42, 0.15);
+    }
+    &__img {
+        padding-top: 15px;
+    }
+    &__img img {
+        display: block;
+        margin: 0 auto;
+        object-fit: cover;
+        @include respond-to (tabletLS) {
+            display: block;
+            height: 565px;
+            padding-top: 30px;
+        }
+        @include respond-to (tablet) {
+            height: 454px;
+        }
+    }
+    &__button-right {
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        top: 365px;
+        right: 0;
+        z-index: 1;
+        background: url(../img/Slide/slide-right.svg) center no-repeat rgba(42, 42, 42, 0.15);
+        @include respond-to (tabletLS) {
+            top: 288px;
+        }
+    }
+    &__button-right:hover {
+        background: url(../img/Slide/slide-right-hover.svg) center no-repeat rgba(42, 42, 42, 0.15);
+    }
+}
+
+.product__cart {
+    position: relative;
+    &-wrap {
+        height: 600px;
+        background: #ffffff;
+        border: 1px solid #EAEAEA;
+        margin: -64px auto 128px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        //justify-content: space-around;
+        @include respond-to (tabletLS) {
+            margin-top: 0;
+        }
+        @include respond-to(armLS) {
+            margin-bottom: 64px;
+        }
+    }
+    &-title {
+        @extend %subtitle;
+        color: #F16D7F;
+        font-weight: 300;
+        margin-top: 64px;
+    }
+    &-divider {
+        width: 63px;
+        height: 3px;
+        background: #ef5b70;
+        margin-top: 12px;
+    }
+    &-subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-top: 12px;
+    }
+    &-text {
+        width: 555px;
+        @extend %subtitle_fetured;
+        color: #5E5E5E;
+        text-align: center;
+        margin-top: 48px;
+        @include respond-to(armLS) {
+            width: 326px;
+        }
+    }
+    &-price {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-top: 32px;
+    }
+    &-dividerDown {
+        height: 1px;
+        width: 642px;
+        border: 1px solid #EAEAEA;
+        margin-top: 65px;
+        @include respond-to(armLS) {
+            width: 175px;
+        }
+    }
+    &-sort {
+        margin-top: 65px;
+    }
+    &-add {
+        width: 211px;
+        height: 47px;
+        margin-top: 48px;
+        border: 1px solid #FF6A6A;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: #F26376;
+        padding: 15px 44px;
+    }
+}
+
+.filter__sort {
+    display: flex;
+    z-index: 10;
+    @extend %subtitle;
+    color: #6F6E6E;
+    img {
+        position: relative;
+        bottom: 3px;
+        left: 3px;
+        @include respond-to(armLS) {
+            bottom: 0;
+        }
+    }
+    .sort-title {
+        margin: 0 11px;
+        padding: 0 11px;
+        @include respond-to(armLS) {
+            font-weight: normal;
+            font-size: 10px;
+            line-height: 12px;
+        }
+    }
+}
+
+.fetured {
+    margin-bottom: 128px;
+    @include respond-to (armLS) {
+        &__item {
+            row-gap: 0;
+        }
+        &__item-box:nth-child(2) {
+            display: none;
+        }
+        &__item-box:last-child {
+            display: block;
+        }
+    }
+}
