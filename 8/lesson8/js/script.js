@@ -1,4 +1,8 @@
 'use strict';
+const app = new Vue({
+  el: '#app'
+});
+//console.log(app);
 
 let brandOutside = document.querySelector('.brand__outside');
 let catalog = document.querySelector('.menu__catalog');
