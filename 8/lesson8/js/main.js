@@ -1,6 +1,6 @@
 'use strict';
-const app = new Vue({
-  el: '#app'
+new Vue({
+  el: '#wrapper'
 });
 //console.log(app);
 

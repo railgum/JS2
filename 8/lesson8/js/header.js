@@ -14,7 +14,9 @@ Vue.component('header-el', {
           <div>
               <ul class="menu__list">
                   <li class="menu__item menu__catalog">
-                      <a href="#" class="menu__link"><img src="img/menu.svg" alt="img"></a>
+                      <a href="#" class="menu__link" @click="showCatalog=!showCatalog">
+                        <img src="img/menu.svg" alt="img">
+                      </a>
                   </li>
                   <li class="menu__item menu__user">
                       <a href="html/regBemBootstrap.html" class="menu__link"><img src="img/user.svg" alt="img"></a>
@@ -27,5 +29,10 @@ Vue.component('header-el', {
       </div>
   </div>
 </header>
-  `
+  `,
+  data(){
+    showCatalog: false;
+    showBasket: false;
+    showAuthorization: false
+  }
 })
