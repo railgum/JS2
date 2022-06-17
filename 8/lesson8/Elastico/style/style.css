@@ -28,12 +28,12 @@
   text-align: center;
 }
 
-.aside {
+aside {
   min-height: 100px;
   background-color: lightblue;
 }
 
-.aside ul li {
+aside ul li {
   clear: both;
   /*position: relative;*/
   /*width: 100%;*/
@@ -45,11 +45,11 @@
   text-align: left;
 }
 
-.aside>ul>li:hover {
+aside>ul>li:hover {
   background-color: aqua;
 }
 
-.aside>ul>li>ul>li {
+aside>ul>li>ul>li {
   display: none;
 }
 

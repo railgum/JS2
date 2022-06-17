@@ -89,9 +89,9 @@ a:hover {
   color: orange;
 }
 
-aside>ul>li>ul {
+aside li {
   padding: 0;
-  display: none;
+  /*display: none;*/
   list-style-type: none;
   width: 160px;
   text-align: left;
@@ -117,7 +117,7 @@ aside>ul>li>ul>li {
 
 .side {
   clear: both;
-  width: 100%;
+  width: 95%;
   margin: 0 auto;
   font-family: "Prosto one";
 }
@@ -140,13 +140,12 @@ aside>ul>li>ul>li {
 }
 
 .gambino {
-  /*position: relative;*/
-  background-image: url(../img/tub.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  margin: -30px 0 20px 0;
+  position: relative;
+  background: url(../img/tub.jpg) no-repeat center;
+  
+  margin: 40px auto;
   width: 100%;
-  height: 335px;
+  height: 450px;
 }
 
 .afo {
@@ -159,9 +158,16 @@ aside>ul>li>ul>li {
   z-index: 0;
 }
 
+.products {
+  display: flex;
+  margin: 0 -5px;
+}
+
 .white_block {
-  position: relative;
-  float: left;
+  padding: 0 5px;
+  flex: 0 1 25%;
+  /*position: relative;
+  float: left;*/
   border-style: solid;
   border-width: 1px;
   border-color: rgb(188, 188, 188);
