@@ -29,9 +29,9 @@ Vue.component('menu-el', {
         </button>
       </li>
       <li class="menu_contacts">
-      <button v-on:click='showCont=!showCont'
-              v-on:mouseleave='showCont=!showCont'
-      >Контакты
+        <button v-on:click='showCont=!showCont'
+                v-on:mouseleave='showCont=!showCont'
+          >Контакты
           <ul v-if='!showCont'>
             <li><a href="#">Адрес и телефоны</a></li>
             <li><a href="#">Проезд</a></li>
@@ -40,9 +40,9 @@ Vue.component('menu-el', {
         </button>
       </li>
       <li class="menu_support">
-      <button v-on:click='showSup=!showSup'
+        <button v-on:click='showSup=!showSup'
               v-on:mouseleave='showSup=!showSup'
-      >Поддержка
+          >Поддержка
           <ul v-if='!showSup'>
             <li><a href="#">Сервисные центры</a></li>
           </ul>
