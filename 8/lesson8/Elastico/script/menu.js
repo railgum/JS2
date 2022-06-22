@@ -22,9 +22,9 @@ Vue.component('menu-el', {
                 v-on:mouseleave='showCat=!showCat'
         >Каталог
           <ul v-if='!showCat'>
-            <li><a href="#">Резиновые смеси</a></li>
-            <li><a href="#">Подвеска</a></li>
-            <li><a href="#">Другое</a></li>
+            <li class="link_cat"><a href="#">Резиновые смеси</a></li>
+            <li class="link_cat"><a href="#">Подвеска</a></li>
+            <li class="link_cat"><a href="#">Другое</a></li>
           </ul>
         </button>
       </li>
@@ -33,9 +33,9 @@ Vue.component('menu-el', {
                 v-on:mouseleave='showCont=!showCont'
           >Контакты
           <ul v-if='!showCont'>
-            <li><a href="#">Адрес и телефоны</a></li>
-            <li><a href="#">Проезд</a></li>
-            <li><a href="#">Обратная связь</a></li>
+            <li class="link_cat"><a href="#">Адрес и телефоны</a></li>
+            <li class="link_cat"><a href="#">Проезд</a></li>
+            <li class="link_cat"><a href="#">Обратная связь</a></li>
           </ul>
         </button>
       </li>
@@ -44,7 +44,7 @@ Vue.component('menu-el', {
               v-on:mouseleave='showSup=!showSup'
           >Поддержка
           <ul v-if='!showSup'>
-            <li><a href="#">Сервисные центры</a></li>
+            <li class="link_cat"><a href="#">Сервисные центры</a></li>
           </ul>
         </button>
       </li>

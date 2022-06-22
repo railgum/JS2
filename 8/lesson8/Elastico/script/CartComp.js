@@ -49,14 +49,17 @@ Vue.component('cart', {
         <div class='basket'>
             <button class="btn-cart" type="button" @click="showCart = !showCart">Корзина</button>
             <div class="cart-block" v-show="showCart">
-                <p v-if="!cartItems.length">Корзина пуста</p>
-                <cart-item class="cart-item" 
-                v-for="item of cartItems" 
-                :key="item.id_product"
-                :cart-item="item" 
-                :img="imgCart"
-                @remove="remove">
-                </cart-item>
+              <p v-if="!cartItems.length">Корзина пуста</p>
+              <cart-item class="cart-item" 
+              v-for="item of cartItems" 
+              :key="item.id_product"
+              :cart-item="item" 
+              :img="imgCart"
+              @remove="remove">
+              </cart-item>
+              <div class="cart-link">
+                <a type="button" class="go_cart" href="html/basket.html">Перейти в корзину"></a>
+              </div>
             </div>
         </div>`
 });
@@ -77,6 +80,7 @@ Vue.component('cart-item', {
           <p class="product-price">{{cartItem.quantity*cartItem.price}}</p>
           <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
       </div>
+      
     </div>
     `
 });

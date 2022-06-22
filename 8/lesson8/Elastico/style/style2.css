@@ -34,11 +34,12 @@
   text-align: center;
   background-image: url(../img/im0.jpg);
 }
+
 header {
   position: relative;
   height: 85px;
   /*width: 100%;*/
- 
+
 }
 
 header img {
@@ -53,11 +54,13 @@ header p {
   color: orange;
   font-size: 40px;
 }
+
 .basket {
   margin: 23px 100px 12px 0;
   position: relative;
 }
-.cart-block{
+
+.cart-block {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
   border-radius: 5px;
   box-sizing: border-box;
@@ -71,10 +74,11 @@ header p {
   z-index: 10;
 }
 
-.invisible{
+.invisible {
   display: none;
 }
-.cart-block:before{
+
+.cart-block:before {
   content: '';
   width: 0;
   height: 0;
@@ -86,7 +90,8 @@ header p {
   border-bottom: 10px solid white;
 }
 
-.buy-btn, .del-btn{
+.buy-btn,
+.del-btn {
   margin-top: 5px;
   background-color: #2f2a2d;
   padding: 5px 15px;
@@ -96,40 +101,51 @@ header p {
   transition: all ease-in-out .4s;
   cursor: pointer;
 }
-.buy-btn:hover, .del-btn:hover{
+
+.buy-btn:hover,
+.del-btn:hover {
   background-color: #fafafa;
   color: #2f2a2d;
   border: 1px solid #2f2a2d;
 }
+
 .cart-item {
   display: flex;
   justify-content: space-between;
 }
-.cart-item:not(:last-child){
+
+.cart-item:not(:last-child) {
   margin-bottom: 20px;
 }
-.product-bio{
+
+.product-bio {
   display: flex;
 }
-.cart-item img{
+
+.cart-item img {
   align-self: flex-start;
   margin-right: 15px;
 }
-.product-single-price{
+
+.product-single-price {
   color: #474747;
   font-size: 0.5em;
 }
-.product-price{
+
+.product-price {
   margin-left: 30px;
 }
-.product-desc{
+
+.product-desc {
   max-width: 150px;
 }
+
 .product-quantity {
   margin-top: 15px;
   font-size: 0.75em;
 }
-.right-block{
+
+.right-block {
   text-align: right;
 }
 
@@ -169,10 +185,10 @@ header p {
   margin-left: 10.382%;
 }
 
-li:hover,
+/*li:hover,
 a:hover {
   color: orange;
-}
+}*/
 
 .menu li {
   padding: 0;
@@ -182,18 +198,21 @@ a:hover {
   text-align: left;
 }
 
-.menu>ul>li:hover ul {
+/*.menu>ul>li:hover ul {
   display: block;
   background-color: lightblue;
   font-size: 10px;
   padding: 20px 0 20px 20px;
-}
+}*/
 
 .menu>ul>li>ul>li {
   margin-bottom: 5px;
   font-size: 20px;
 }
 
+.link_cat {
+  margin-top: 20px;
+}
 
 /*конец меню*/
 
@@ -227,7 +246,7 @@ a:hover {
 .gambino {
   position: relative;
   background: url(../img/tub.jpg) no-repeat center;
-  
+
   margin: 40px auto;
   width: 100%;
   height: 450px;
@@ -256,9 +275,9 @@ a:hover {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(188, 188, 188);
-  background-image: -moz-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
+  background-image: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
   box-shadow: inset 0px 2px 1px 0px rgba(255, 255, 255, 0.58);
   width: 214px;
   height: 267px;
@@ -288,9 +307,9 @@ a:hover {
 
 .add {
   border-radius: 3px;
-  background-image: -moz-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
-  background-image: -ms-linear-gradient( 90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
+  background-image: -moz-linear-gradient(90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
+  background-image: -webkit-linear-gradient(90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
+  background-image: -ms-linear-gradient(90deg, rgb(232, 70, 33) 0%, rgb(253, 95, 55) 86%);
   box-shadow: 0px 2px 3px 0px rgba(223, 81, 40, 0.48), inset 0px 1px 0px 0px rgba(251, 96, 51, 0.53);
   width: 109px;
   height: 28px;
