@@ -15,38 +15,16 @@ Vue.component('menu-el', {
   <aside class="menu">          
     <ul>
       <li class="menu_primary">
-        <button>Главная</button>
+        <a href=#>Главная</a>
       </li>
       <li class="menu_catalog">
-        <button v-on:click='showCat=!showCat'
-                v-on:mouseleave='showCat=!showCat'
-        >Каталог
-          <ul v-if='!showCat'>
-            <li class="link_cat"><a href="#">Резиновые смеси</a></li>
-            <li class="link_cat"><a href="#">Подвеска</a></li>
-            <li class="link_cat"><a href="#">Другое</a></li>
-          </ul>
-        </button>
+        <a href="html/catalog.html">Каталог</a>
       </li>
       <li class="menu_contacts">
-        <button v-on:click='showCont=!showCont'
-                v-on:mouseleave='showCont=!showCont'
-          >Контакты
-          <ul v-if='!showCont'>
-            <li class="link_cat"><a href="#">Адрес и телефоны</a></li>
-            <li class="link_cat"><a href="#">Проезд</a></li>
-            <li class="link_cat"><a href="#">Обратная связь</a></li>
-          </ul>
-        </button>
+        <a href="html/contacts.html">Контакты</a>
       </li>
       <li class="menu_support">
-        <button v-on:click='showSup=!showSup'
-              v-on:mouseleave='showSup=!showSup'
-          >Поддержка
-          <ul v-if='!showSup'>
-            <li class="link_cat"><a href="#">Сервисные центры</a></li>
-          </ul>
-        </button>
+        <a href=#>Поддержка</a>
       </li>
     </ul>
   </aside>`
